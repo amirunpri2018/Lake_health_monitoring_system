@@ -113,7 +113,7 @@ if(!empty($_POST['value']))
             setTimeout( function() {
             $('#auto').load('index.php');
             refresh();
-            }, 2000);
+            }, 10000);
         }
     </script>
 </body>
