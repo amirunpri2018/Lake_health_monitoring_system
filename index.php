@@ -1,3 +1,10 @@
+<?php
+
+if(!empty($_POST['value']))
+    {
+    	$value = $_POST['value'];
+    }
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -34,9 +41,7 @@
         <grid>
             <div col="1/3">
                 <h5 style="padding-top: 2em;">Pollution Level</h5>
-                <iframe src="./read.php" scrolling="no" style="overflow:hidden;border: 0px; text-align: center; padding-bottom: 0px; height: 10rem; "  id="pi">
-                    <p>Your browser does not support iframes.</p>
-                </iframe>
+                <h4 style="color: white; text-align: left; font-size: 4rem; padding-bottom: 0; padding-top: 0; margin-left:-20;" id="auto"><?php echo $value; ?><span style="font-size: 2rem">pH</span></h4>
                 <span><i class="fab fa-twitter" style="color:#07F;"></i>
                     <a class="twitter-share-button"
                       href="http://twitter.com/intent/tweet?text=%23SpreadAwareness+%23SaveOurLakes%0ALearn%20more%20at%20http://ctrl-c.club/~greymtr/T2WN2/" style="text-decoration: none;color: #07F;">
@@ -99,14 +104,14 @@
     <script type="text/javascript" src="./js/jquery-3.3.1.min.js"></script>
     <script type="text/javascript">
         $(document).ready( function(){
-            $('#auto').load('read.php');
+            $('#auto').load('index.php');
             refresh();
         });
         
         function refresh()
         {
             setTimeout( function() {
-            $('#auto').load('read.php');
+            $('#auto').load('index.php');
             refresh();
             }, 2000);
         }
