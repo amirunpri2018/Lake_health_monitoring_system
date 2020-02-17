@@ -102,7 +102,7 @@ if(!empty($_POST['value']))
     </div>
 
     <script type="text/javascript" src="./js/jquery-3.3.1.min.js"></script>
-    <script type="text/javascript">
+<!--     <script type="text/javascript">
         $(document).ready( function(){
             $('#auto').load('index.php');
             refresh();
@@ -115,7 +115,7 @@ if(!empty($_POST['value']))
             refresh();
             }, 10000);
         }
-    </script>
+    </script> -->
 </body>
 
 <style>
